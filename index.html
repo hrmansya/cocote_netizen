@@ -4,26 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Selamat Datang</title>
+  <title>Berita Terbaru</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Selamat Datang di Situs Saya</h1>
-    <p>Situs web sederhana yang langsung bisa digunakan.</p>
+    <h1>Berita Terbaru</h1>
+    <input type="text" id="search" placeholder="Cari berita..." oninput="searchNews()" />
+    <nav>
+      <button onclick="filterCategory('Semua')">Semua</button>
+      <button onclick="filterCategory('Teknologi')">Teknologi</button>
+      <button onclick="filterCategory('Olahraga')">Olahraga</button>
+      <button onclick="filterCategory('Hiburan')">Hiburan</button>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Tentang Situs Ini</h2>
-      <p>Ini adalah contoh halaman web sederhana yang bisa langsung digunakan untuk berbagai keperluan seperti portofolio, blog, atau landing page.</p>
-    </section>
-    <section>
-      <h2>Kontak</h2>
-      <p>Email: contoh@email.com</p>
-    </section>
-  </main>
+  <main id="news-container"></main>
 
-  <footer>© 2025 Situs Langsung Pakai</footer>
+  <footer>© 2025 Berita Terbaru</footer>
 </body>
 </html>
